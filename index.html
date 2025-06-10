@@ -58,6 +58,15 @@
             <li>Mengotomasi End-to-end testing dengan Playwright.</li>
             <li>Berkolaborasi dengan tim Agile dan developer.</li>
           </ul>
+          <br>
+          <h3 class="text-xl font-bold">Web Programmer – Migent Software</h3>
+          <p class="text-sm text-gray-500">Jan 2021 – Nov 2023</p>
+          <ul class="list-disc list-inside">
+            <li>Membuat web aplikasi akuntansi online menggunakan bahasa pemrogramam PHP Codeigniter</li>
+            <li>Membuat fitur baru pada aplikasi akuntansi online</li>
+            <li>Memelihara database MySql</li>
+            <li>Melakukan perbaikan sistem atau fixing jika ada bug sistem</li>
+          </ul>
         </div>
       </div>
     </details>
@@ -69,10 +78,10 @@
           <div>
             <p><strong>Aplikasi Billing System</strong></p>
             <ul class="list-disc list-inside">
-              <li><a href="#" class="text-blue-600 underline">Test Plan (PDF)</a></li>
-              <li><a href="#" class="text-blue-600 underline">Test Cases (Excel)</a></li>
-              <li><a href="#" class="text-blue-600 underline">Bug Report (Jira Screenshot)</a></li>
-              <li><a href="#" class="text-blue-600 underline">Automation Repo (GitHub)</a></li>
+              <li>Test Plan</li>
+              <li><a href="https://docs.google.com/spreadsheets/d/1DRgA9AFg9RY6FLdOnij8tJf5GwbcL9QmaRqSfhIcSAI/edit?usp=sharing" class="text-blue-600 underline" target="_blank">Test Cases (Excel)</a></li>
+              <li><a type="button" onclick="openModal()" class="text-blue-600 underline">Bug Report (Spreadsheet Screenshot)</a></li>
+              <li><a href="https://github.com/faridiqmal44/mentoring-dealls" target="_blank" class="text-blue-600 underline">Automation Repo (GitHub)</a></li>
             </ul>
           </div>
         </div>
@@ -93,4 +102,23 @@
     <p class="text-sm text-gray-500">&copy; 2025 Farid Iqmal Hakim</p>
   </footer>
 </body>
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-100">
+  <div class="bg-white p-4 rounded-lg shadow-lg max-w-7xl w-full relative">
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-4">Test Case (screenshoot)</h2>
+    <p>Berikut ini adalah contoh Test Case yang saya buat</p>
+    <img src="assets/img/Bug Report (Spreadsheet screnshoot).jpeg" alt="Screenshoot contoh Test Case">
+  </div>
+</div>
+
+<script>
+  function openModal(){
+    document.getElementById('modal').classList.remove('hidden');
+  }
+
+  function closeModal(){
+    document.getElementById('modal').classList.add('hidden');
+  }
+</script>
 </html>
