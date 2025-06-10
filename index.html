@@ -5,55 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio QA - Ahmad Prasetyo</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1d4ed8'
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow p-6 text-center">
+  <header class="bg-white shadow p-6 text-center flex flex-col items-center">
+    <img src="https://via.placeholder.com/120" alt="Foto Profil" class="rounded-full w-28 h-28 mb-4 shadow-md border-4 border-primary" />
     <h1 class="text-3xl font-bold">Ahmad Prasetyo</h1>
     <p class="text-lg text-gray-600">Software Quality Assurance Engineer</p>
   </header>
 
   <section class="max-w-4xl mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-2">Tentang Saya</h2>
-    <p class="mb-4">Saya adalah seorang QA Engineer dengan pengalaman lebih dari 3 tahun dalam pengujian perangkat lunak, baik manual maupun otomatis, menggunakan tools seperti Playwright, Cypress, dan Postman.</p>
+    <details class="mb-4 border rounded overflow-hidden">
+      <summary class="bg-primary text-white px-4 py-2 cursor-pointer text-lg font-semibold">Tentang Saya</summary>
+      <div class="p-4 bg-white">
+        <p>Saya adalah seorang QA Engineer dengan pengalaman lebih dari 3 tahun dalam pengujian perangkat lunak, baik manual maupun otomatis, menggunakan tools seperti Playwright, Cypress, dan Postman.</p>
+      </div>
+    </details>
 
-    <h2 class="text-2xl font-semibold mb-2">Keahlian Teknis</h2>
-    <ul class="list-disc list-inside mb-4">
-      <li>Manual Testing (Test Case, Test Plan, Exploratory)</li>
-      <li>Automation: Playwright, Cypress, Selenium</li>
-      <li>API Testing: Postman, REST Assured</li>
-      <li>Bug Tracking: Jira, Trello</li>
-      <li>CI/CD: GitHub Actions, Jenkins</li>
-      <li>Bahasa: JavaScript, Python, SQL</li>
-    </ul>
-
-    <h2 class="text-2xl font-semibold mb-2">Pengalaman Kerja</h2>
-    <div class="mb-4">
-      <h3 class="text-xl font-bold">QA Engineer – PT Teknologi Inovatif</h3>
-      <p class="text-sm text-gray-500">Jan 2022 – Sekarang</p>
-      <ul class="list-disc list-inside">
-        <li>Menulis dan mengelola lebih dari 300 test case.</li>
-        <li>Mengotomasi smoke testing dengan Playwright.</li>
-        <li>Berkolaborasi dengan tim Agile dan developer.</li>
-      </ul>
-    </div>
-
-    <h2 class="text-2xl font-semibold mb-2">Proyek & Artefak QA</h2>
-    <div class="space-y-2">
-      <div>
-        <p><strong>Aplikasi Kasir Online</strong></p>
+    <details class="mb-4 border rounded overflow-hidden">
+      <summary class="bg-primary text-white px-4 py-2 cursor-pointer text-lg font-semibold">Keahlian Teknis</summary>
+      <div class="p-4 bg-white">
         <ul class="list-disc list-inside">
-          <li><a href="#" class="text-blue-600 underline">Test Plan (PDF)</a></li>
-          <li><a href="#" class="text-blue-600 underline">Test Cases (Excel)</a></li>
-          <li><a href="#" class="text-blue-600 underline">Bug Report (Jira Screenshot)</a></li>
-          <li><a href="#" class="text-blue-600 underline">Automation Repo (GitHub)</a></li>
+          <li>Manual Testing (Test Case, Test Plan, Exploratory)</li>
+          <li>Automation: Playwright, Cypress, Selenium</li>
+          <li>API Testing: Postman, REST Assured</li>
+          <li>Bug Tracking: Jira, Trello</li>
+          <li>CI/CD: GitHub Actions, Jenkins</li>
+          <li>Bahasa: JavaScript, Python, SQL</li>
         </ul>
       </div>
-    </div>
+    </details>
 
-    <h2 class="text-2xl font-semibold mt-6 mb-2">Kontak</h2>
-    <p>Email: <a href="mailto:ahmad.qatester@gmail.com" class="text-blue-600 underline">ahmad.qatester@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ahmad-qa" class="text-blue-600 underline">linkedin.com/in/ahmad-qa</a></p>
-    <p>GitHub: <a href="https://github.com/ahmadqa" class="text-blue-600 underline">github.com/ahmadqa</a></p>
+    <details class="mb-4 border rounded overflow-hidden">
+      <summary class="bg-primary text-white px-4 py-2 cursor-pointer text-lg font-semibold">Pengalaman Kerja</summary>
+      <div class="p-4 bg-white">
+        <div class="mb-4">
+          <h3 class="text-xl font-bold">QA Engineer – PT Teknologi Inovatif</h3>
+          <p class="text-sm text-gray-500">Jan 2022 – Sekarang</p>
+          <ul class="list-disc list-inside">
+            <li>Menulis dan mengelola lebih dari 300 test case.</li>
+            <li>Mengotomasi smoke testing dengan Playwright.</li>
+            <li>Berkolaborasi dengan tim Agile dan developer.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="mb-4 border rounded overflow-hidden">
+      <summary class="bg-primary text-white px-4 py-2 cursor-pointer text-lg font-semibold">Proyek & Artefak QA</summary>
+      <div class="p-4 bg-white">
+        <div class="space-y-2">
+          <div>
+            <p><strong>Aplikasi Kasir Online</strong></p>
+            <ul class="list-disc list-inside">
+              <li><a href="#" class="text-blue-600 underline">Test Plan (PDF)</a></li>
+              <li><a href="#" class="text-blue-600 underline">Test Cases (Excel)</a></li>
+              <li><a href="#" class="text-blue-600 underline">Bug Report (Jira Screenshot)</a></li>
+              <li><a href="#" class="text-blue-600 underline">Automation Repo (GitHub)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="mb-4 border rounded overflow-hidden">
+      <summary class="bg-primary text-white px-4 py-2 cursor-pointer text-lg font-semibold">Kontak</summary>
+      <div class="p-4 bg-white">
+        <p>Email: <a href="mailto:ahmad.qatester@gmail.com" class="text-blue-600 underline">ahmad.qatester@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ahmad-qa" class="text-blue-600 underline">linkedin.com/in/ahmad-qa</a></p>
+        <p>GitHub: <a href="https://github.com/ahmadqa" class="text-blue-600 underline">github.com/ahmadqa</a></p>
+      </div>
+    </details>
   </section>
 
   <footer class="bg-white shadow p-4 text-center mt-8">
